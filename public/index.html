@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <title>Tailwindcss Project</title>
+  </head>
+  <body>
+    <header class="py-3.5 shadow">
+      <div class="container">
+        <div class="wrapper flex justify-between items-center">
+          <div class="min-w-40">
+            <a href="#">
+              <img
+                src="../src/images/logo_web.svg"
+                alt="DRC Sytem Logo"
+                width="140"
+                height="44"
+              />
+            </a>
+          </div>
+          <nav class="w-full md:flex fixed -right-full md:static top-0 h-screen md:h-auto bg-red-600 md:bg-white  justify-center items-center transition-all sidebar p-4 md:p-0 ">
+            <button class="sidebar-close-btn md:hidden block" aria-label="Sidebar Close Button">
+              <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z" fill="#0F0F0F"></path> </g></svg>
+            </button>
+            <ul class="md:flex-row flex flex-col md:gap-4 gap-2 md:items-center flex-start mx-auto navlinks">
+              <li class="menu-item relative">
+                <div class="flex items-center gap-1">
+                    <a href="#" class="text-white md:text-black">Who we are</a>
+                    <button class="toggle-btn">
+                    <svg
+                        width="28px"
+                        height="28px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                    >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z"
+                            fill="#0F0F0F"
+                        ></path>
+                        </g>
+                    </svg>
+                    </div>
+                    <div class="submenu max-w-fit p-5  hidden  bg-red-400 rounded-lg min-w-52 static md:absolute left-0  top-16 ">
+                      <ul >
+                        <li class="fw-bold text-lg text-red-700">Career</li>
+                        <li><a href="#">submenu-itmes</a></li>
+                        <li><a href="#">submenu-itmes</a></li>
+                        <li><a href="#">submenu-itmes</a></li>
+                        <li><a href="#">submenu-itmes</a></li>
+                        <li><a href="#">submenu-itmes</a></li>
+                      </ul>
+                    </div>
+                </button>
+                
+              </li>
+              <li class="menu-item relative">
+                <div class="flex items-center gap-1">
+                    <a href="#" class="text-white md:text-black">What we do</a>
+                    <button class="toggle-btn">
+                    <svg
+                        width="28px"
+                        height="28px"
+                        viewBox="0 0 24 24"
+                        fill="#fff"
+                    >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z"
+                            fill="#0F0F0F"
+                        ></path>
+                        </g>
+                    </svg>
+                    </div>
+                    <div class="submenu max-w-fit p-5  hidden  bg-red-400 rounded-lg min-w-52 static md:absolute left-0  top-16 ">
+                      <ul >
+                        <li class="fw-bold text-lg text-red-700">Career</li>
+                        <li><a href="#">submenu-itmes</a></li>
+                        <li><a href="#">submenu-itmes</a></li>
+                        <li><a href="#">submenu-itmes</a></li>
+                        <li><a href="#">submenu-itmes</a></li>
+                        <li><a href="#">submenu-itmes</a></li>
+                      </ul>
+                    </div>
+                </button>
+              </li>
+              <li><a href="#" class="py-2 inline-block text-white md:text-black">Contact</a></li>
+            </ul>
+            <a
+              href="#"
+              role="button"
+              class="gradientbtn btn text-white flex items-center gap-2 my-3 w-fit"
+              >Book Consultation
+              <span class="bg-white p-1 rounded-full"
+                ><svg
+                  width="10px"
+                  height="10px"
+                  viewBox="-4.5 0 20 20"
+                  fill="#000000"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g
+                      id="Page-1"
+                      stroke-width="0.0002"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <g
+                        id="Dribbble-Light-Preview"
+                        transform="translate(-305.000000, -6679.000000)"
+                        fill="#000000"
+                      >
+                        <g
+                          id="icons"
+                          transform="translate(56.000000, 160.000000)"
+                        >
+                          <path
+                            d="M249.365851,6538.70769 L249.365851,6538.70769 C249.770764,6539.09744 250.426289,6539.09744 250.830166,6538.70769 L259.393407,6530.44413 C260.202198,6529.66364 260.202198,6528.39747 259.393407,6527.61699 L250.768031,6519.29246 C250.367261,6518.90671 249.720021,6518.90172 249.314072,6519.28247 L249.314072,6519.28247 C248.899839,6519.67121 248.894661,6520.31179 249.302681,6520.70653 L257.196934,6528.32352 C257.601847,6528.71426 257.601847,6529.34685 257.196934,6529.73759 L249.365851,6537.29462 C248.960938,6537.68437 248.960938,6538.31795 249.365851,6538.70769"
+                            id="arrow_right-[#336]"
+                          ></path>
+                        </g>
+                      </g>
+                    </g>
+                  </g></svg
+              ></span>
+            </a>
+          </nav>
+          <button class="md:hidden block sidebar-open-btn" aria-label="Sidebar Open Button">
+            <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <script src="../src/js/tailwind.js" defer></script>
+  </body>
+</html>

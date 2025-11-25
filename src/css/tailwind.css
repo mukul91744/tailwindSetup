@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer component {
+  .gradientbtn {
+    background: linear-gradient(
+      to right,
+      rgb(109 14 177) 0%,
+      rgb(207 169 79) 100%
+    );
+  }
+  .btn {
+    @apply text-lg rounded-full text-white px-4 py-2 inline-block;
+  }
+  .navlinks a {
+    @apply text-lg md:py-5 py-2 md:text-black text-white;
+  }
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media screen and (max-width: 768px) {
+  .show {
+    right: 0;
+  }
+  nav {
+    overflow-x: auto;
+  }
+}
+.submenu a,
+.submenu li {
+  @apply text-white;
+}
+@media screen and (min-width: 1024px) {
+  .menu-item:hover .submenu {
+    opacity: 1;
+    display: block;
+  }
+}
